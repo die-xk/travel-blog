@@ -1,0 +1,50 @@
+.app {
+  .imageCard {
+    position: absolute;
+    z-index: 99;
+    height: 80vh;
+    width: 40vw;
+    top: 90%;
+    left: 2%;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    border-top: 0.5em solid #725ac1;
+    border-bottom: 0.5em solid #725ac1;
+  }
+  .imageCard2 {
+    position: absolute;
+    z-index: 99;
+    height: 80vh;
+    width: 40vw;
+    top: 250%;
+    left: 58%;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
+    border-top: 0.5em solid #725ac1;
+    border-bottom: 0.5em solid #725ac1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageCard {
+    height: 100vh !important;
+    width: 42vw !important;
+  }
+  .imageCard2 {
+    height: 100vh !important;
+    top: 270% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageCard {
+    display: none;
+  }
+  .imageCard2 {
+    display: none;
+  }
+}

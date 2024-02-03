@@ -1,0 +1,80 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 10%;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  color: #fff;
+  .links-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    .btn-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    font-size: 1em;
+  }
+  footer {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    justify-content: center;
+    .links-container {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    .links {
+      font-size: 1em !important;
+    }
+    .social {
+      font-size: 1em !important;
+    }
+  }
+}
+
+footer {
+  background-color: #1c1c1c;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  padding: 0 5%;
+  .links {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #fff;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.5em;
+    color: #fff;
+  }
+}
